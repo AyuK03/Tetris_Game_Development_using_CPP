@@ -32,7 +32,7 @@ void Grid::Draw(){
     for(int row = 0; row < numRows; row++){
         for(int col = 0; col < numCols; col++){
             int cellValue = grid[row][col];     // extracting cell's color value
-            DrawRectangle(col*cellSize+1, row*cellSize+1, cellSize-2, cellSize-2, colors[cellValue]); // col*cellSize+1, row*cellSize+1 gives top left corner of each box
+            DrawRectangle(col * cellSize + 11, row * cellSize + 11, cellSize - 2, cellSize - 2, colors[cellValue]); // col*cellSize+1, row*cellSize+1 gives top left corner of each box
             // we +1 and -1 in prev line to make the cells separate from each other so that the color behind them, i.e the background be visible to notice each cell
         }
     }
