@@ -11,3 +11,6 @@ I will continue to add new and unique features to this game.
 # Interface Developed
 ![Screenshot](https://github.com/AyuK03/Tetris_Game_Development_using_CPP/blob/main/Images/myGame_pic.jpeg)
 
+# 👨‍💻 Welcome to our Developer's Corner!
+Hey folks! I am Ayushi Kandpal, currently in my 2nd year of colleg ( while developing this interesting project ). I am really enthusiastic about learning new skills and bring it down to application. This project was a fruit of that aspiration, wherein I learnt more about OOPs and in greater depth through the development of this game.
+
