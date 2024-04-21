@@ -8,6 +8,7 @@ class Game
 public:
     Game();
     Grid grid;
+    bool gameOver;
     Block GetRandomBlock();
     vector<Block> GetAllBlocks();
     void Draw();
@@ -24,5 +25,6 @@ private:
     void RotateBlock();
     void LockBlock();
     bool BlockFits();
+    void Reset();
 
 };

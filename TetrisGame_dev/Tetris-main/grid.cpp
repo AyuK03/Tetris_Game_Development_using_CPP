@@ -83,7 +83,7 @@ bool Grid::IsRowFull(int row)
             return false;
         }
     }
-    return false;
+    return true;
 }
 
 void Grid::ClearRow(int row)
