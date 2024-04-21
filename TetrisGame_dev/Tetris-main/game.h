@@ -14,6 +14,7 @@ public:
     void HandleInput();
     void MoveBlockDown();
     Music music;
+    Sound gameOver_sound;
 
 private:
     Grid grid;

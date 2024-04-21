@@ -27,10 +27,10 @@ int main(){
     Game game = Game();
     while(!WindowShouldClose())
     {  
-        SetMusicVolume(game.music, 0.3f); 
+        SetMusicVolume(game.music, 0.6f); 
         UpdateMusicStream(game.music);
         game.HandleInput();
-        if(EventTriggered(0.28))
+        if(EventTriggered(0.25))
         {
             game.MoveBlockDown();
         }

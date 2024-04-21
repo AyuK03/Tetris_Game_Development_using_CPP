@@ -16,10 +16,12 @@ Game::Game()
     PlayMusicStream(music);
     rotateSound = LoadSound("Soundtracks/rotate.mp3");
     clearSound = LoadSound("Soundtracks/clear.mp3");
+    gameOver_sound = LoadSound("Soundtracks/game_over.wav");
 }
 
 Game::~Game()
 {
+    UnloadSound(gameOver_sound);
     UnloadSound(rotateSound);
     UnloadSound(clearSound);
     UnloadMusicStream(music);
@@ -163,6 +165,7 @@ void Game::LockBlock()
     currentBlock = nextBlock;
     if(BlockFits() == false)
     {
+        PlaySound(gameOver_sound);
         gameOver = true;
     }
     nextBlock = GetRandomBlock();

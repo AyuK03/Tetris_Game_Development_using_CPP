@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-extern const Color darkGrey;
+extern const Color lightGrey;
 extern const Color orange;
 extern const Color cyan;
 extern const Color yellow;
