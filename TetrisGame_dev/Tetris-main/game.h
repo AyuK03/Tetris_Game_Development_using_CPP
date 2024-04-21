@@ -20,5 +20,9 @@ private:
     vector<Block> blocks;
     Block currentBlock;
     Block nextBlock;
+    bool isBlockOutside();
+    void RotateBlock();
+    void LockBlock();
+    bool BlockFits();
 
 };

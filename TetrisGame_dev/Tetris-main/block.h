@@ -14,6 +14,8 @@ class Block
         void Draw();
         void Move(int row, int column);
         vector<Position> GetCellPositions();
+        void Rotate();
+        void UndoRotation();
         map<int, vector<Position>> cells;
 
     private:
