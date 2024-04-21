@@ -11,7 +11,7 @@ class Block
     public:
         int id;
         Block();
-        void Draw();
+        void Draw(int offsetX, int offsetY);
         void Move(int row, int column);
         vector<Position> GetCellPositions();
         void Rotate();
