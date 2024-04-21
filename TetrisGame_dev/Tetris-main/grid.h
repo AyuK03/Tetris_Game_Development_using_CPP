@@ -13,9 +13,12 @@ class Grid{
         int grid[20][10];
         bool isCellOutside(int r, int c);
         bool isCellEmpty(int row, int column);
+        int ClearFullRows();
     private:
         // these values need not be known by other classes/files
         bool IsRowFull(int row);
+        void ClearRow(int row);
+        void ShiftRowDown(int row, int numRows);
         int numRows;
         int numCols;
         int cellSize;
