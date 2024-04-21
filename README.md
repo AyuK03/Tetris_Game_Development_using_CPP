@@ -9,4 +9,7 @@
 I will continue to add new and unique features to this game.
 
 # Interface Developed
-![Screenshot](https://github.com/AyuK03/Tetris_Game_Development_using_CPP/blob/main/Images/myGame_pic.jpeg)
+<p align="center">
+  ![Screenshot](https://github.com/AyuK03/Tetris_Game_Development_using_CPP/blob/main/Images/myGame_pic.jpeg)
+</p>
+
