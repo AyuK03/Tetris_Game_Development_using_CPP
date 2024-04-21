@@ -7,11 +7,13 @@ class Game
 {
 public:
     Game();
+    ~Game();
     bool gameOver;
     int score;
     void Draw();
     void HandleInput();
     void MoveBlockDown();
+    Music music;
 
 private:
     Grid grid;
@@ -28,5 +30,7 @@ private:
     bool BlockFits();
     void Reset();
     void UpdateScore(int linesCleared, int moveDownPts);
+    Sound rotateSound;
+    Sound clearSound;
 
 };

@@ -26,7 +26,9 @@ int main(){
     SetTargetFPS(60);                           // defines the frame rate so that game runs in the speed we want, if not define then it will run in the speed of computer
     Game game = Game();
     while(!WindowShouldClose())
-    {   
+    {  
+        SetMusicVolume(game.music, 0.3f); 
+        UpdateMusicStream(game.music);
         game.HandleInput();
         if(EventTriggered(0.28))
         {
@@ -43,7 +45,7 @@ int main(){
         char scoreTest[10];
         sprintf(scoreTest,"%d",game.score);
         Vector2 textSize = MeasureTextEx(font, scoreTest, 38, 2);
-        DrawTextEx(font, scoreTest , {320 + (170 - textSize.x) / 2, 65}, 38, 2, WHITE);
+        DrawTextEx(font, scoreTest , {320 + (170 - textSize.x) / 2, 65}, 38, 2, lightGreen);
         DrawRectangleRounded({320, 215, 170, 180}, 0.3, 6, lightBlue);
 
         if(game.gameOver)
